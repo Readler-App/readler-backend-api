@@ -25,7 +25,7 @@ SECRET_KEY = 'xq&61$-9^c!6!h-(jvx%0!imo6av8=1$*o*-$qe522ww0!yr1f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['176.112.211.7','localhost']
+ALLOWED_HOSTS = ['176.112.211.7','localhost','127.0.0.1']
 
 
 # Application definition
@@ -81,7 +81,7 @@ DATABASES = {
 	'USER': 'readleradmin',
 	'PASSWORD': 'dbp@ss123',
 	'HOST': 'localhost',
-	'PORT': '',
+	'PORT': '5433',
     }
 }
 
