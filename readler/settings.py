@@ -25,7 +25,7 @@ SECRET_KEY = 'xq&61$-9^c!6!h-(jvx%0!imo6av8=1$*o*-$qe522ww0!yr1f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['176.112.211.7','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['176.112.211.7', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cuser',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -76,12 +78,12 @@ WSGI_APPLICATION = 'readler.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-	'NAME': 'readler',
-	'USER': 'readleradmin',
-	'PASSWORD': 'dbp@ss123',
-	'HOST': 'localhost',
-	'PORT': '5433',
+        #    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'readler',
+        'USER': 'readleradmin',
+        'PASSWORD': 'dbp@ss123',
+        'HOST': 'localhost',
+        'PORT': '5433',
     }
 }
 
