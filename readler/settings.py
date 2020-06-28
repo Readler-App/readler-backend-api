@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cuser',
     'rest_framework',
+    'readler.backendAPI',
 ]
 
 MIDDLEWARE = [
@@ -106,6 +107,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Custom User model
+AUTH_USER_MODEL = 'backendAPI.CustomUser'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
