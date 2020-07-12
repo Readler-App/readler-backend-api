@@ -5,7 +5,7 @@ from cuser.models import AbstractCUser
 
 # Abstraction layer on top of CUser
 class CustomUser(AbstractCUser):
-    middleNames = models.CharField(max_length=100)
+    middleNames = models.CharField(max_length=100, default='')
     username = models.CharField(max_length=50, default='')
 
 
@@ -15,6 +15,9 @@ class Settings(models.Model):
     fontSize = models.CharField(max_length=10, default='16px')
     parMargin = models.CharField(max_length=10, default='1em')
     lineHeight = models.CharField(max_length=10, default='normal')
+
+    def __str__(self):
+        return ("<" + type(self).__name__ + ": " + self.user.first_name + " " + self.user.last_name + ">")
 
 
 class Library(models.Model):
